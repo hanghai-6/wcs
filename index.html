@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>执业药师注册信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        /* 头部信息栏 */
+        .header-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 4px 4px 0 0;
+            border: 1px solid #ddd;
+            border-bottom: none;
+        }
+        .header-info p {
+            font-size: 18px;
+            line-height: 2.2;
+            color: #333;
+        }
+        .header-info p strong {
+            margin-right: 8px;
+        }
+        /* 详情信息区 */
+        .detail-info {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-bottom: none;
+        }
+        .detail-info p {
+            font-size: 16px;
+            line-height: 2.2;
+            color: #333;
+        }
+        .detail-info p strong {
+            margin-right: 8px;
+        }
+        /* 注册历史标题 */
+        .history-title {
+            background-color: #f0f0f0;
+            padding: 12px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border: 1px solid #ddd;
+            border-bottom: none;
+        }
 
+        /* 表格外层容器：实现横向滚动条 */
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* 横向滚动核心代码 */
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 0 0 4px 4px;
+        }
+
+        /* 表格：宽度自适应内容，不固定 */
+        .history-table {
+            width: auto; /* 关键：让表格根据内容自适应宽度 */
+            border-collapse: collapse;
+            white-space: nowrap; /* 防止文字换行 */
+        }
+        .history-table th,
+        .history-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+            color: #333;
+        }
+        .history-table th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+        .history-table tr:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部核心信息 -->
+    <div class="header-info">
+        <p><strong>姓名：</strong>武传荣</p>
+        <p><strong>注册证编号：</strong>212224060374</p>
+        <p><strong>资格证书号：</strong>0057023</p>
+        <p><strong>注册证状态：</strong>有效</p>
+    </div>
+
+    <!-- 详细执业信息 -->
+    <div class="detail-info">
+        <p><strong>执业地区：</strong>辽宁省丹东市</p>
+        <p><strong>执业类别：</strong>中药学</p>
+        <p><strong>执业范围：</strong>零售</p>
+        <p><strong>执业单位：</strong>宽甸康益大药房有限公司</p>
+        <p><strong>有效期至：</strong>2029年06月06日</p>
+        <p><strong>注册日期：</strong>2024年06月07日</p>
+        <p><strong>报考单位：</strong>宽甸县药检所</p>
+    </div>
+
+    <!-- 注册历史标题 -->
+    <div class="history-title">注册历史</div>
+
+    <!-- 表格滚动容器 -->
+    <div class="table-container">
+        <!-- 注册历史表格 -->
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>注册证编号</th>
+                    <th>执业地区</th>
+                    <th>执业类别</th>
+                    <th>执业范围</th>
+                    <th>执业单位</th>
+                    <th>有效期</th>
+                    <th>发证日期</th>
+                    <th>报考单位</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>212205060289</td>
+                    <td>辽宁省</td>
+                    <td>中药学</td>
+                    <td>经营</td>
+                    <td>辽宁新华鲁抗大药房有限公司宽甸南市场分店</td>
+                    <td></td>
+                    <td></td>
+                    <td>宽甸县药检所</td>
+                </tr>
+                <tr>
+                    <td>212203060470</td>
+                    <td>辽宁省</td>
+                    <td>中药学</td>
+                    <td>经营</td>
+                    <td>宽甸满族自治县医保大药房</td>
+                    <td></td>
+                    <td></td>
+                    <td>宽甸县药检所</td>
+                </tr>
+                <tr>
+                    <td>212224060374</td>
+                    <td>辽宁省丹东市</td>
+                    <td>中药学</td>
+                    <td>零售</td>
+                    <td>宽甸康益大药房有限公司</td>
+                    <td>2029年06月06日</td>
+                    <td>2024年06月07日</td>
+                    <td>宽甸县药检所</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
